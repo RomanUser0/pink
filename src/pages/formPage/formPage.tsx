@@ -48,7 +48,7 @@ function FormPage() {
                 <div className={Styles.achievements}>
                     <div className={Styles.achievements__wrapper}>
                         <p>ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТИШЕСТВИИ</p>
-                        <input id='achievements_one' type='checkbox' />
+                        <input id='achievements_one' type='checkbox'  {...register('селфи')}/>
                         <label htmlFor='achievements_one'>Сделал селфи с акулой</label>
                         <input id='achievements_two' type='checkbox' />
                         <label htmlFor='achievements_two'>Обгорел на пляже</label>
@@ -62,6 +62,7 @@ function FormPage() {
                         <label htmlFor='achievements_six'>Разгромил отель</label>
                     </div>
                 </div>
+                
                 <div className={Styles.contacts}>    
                     <div className={Styles.contacts__wrapper}>
                         {width > 660 ? <p>КОНТАКТНАЯ ИНФОРМАЦИЯ</p> : null }
